@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>baikal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<script src="js/jquery-ui.min.js"></script>
+	<!--<script src="js/control.js"></script> -->
+</head>
+<body>
+
+	<div id="modal"> 
+		<div id="close_mod">
+			<svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		  	viewBox="0 0 611.979 611.979" style="enable-
+		  	background:new 0 0 611.979 611.979;"
+		 	xml:space="preserve">
+			<path d="M356.781,305.982L601.453,61.311c14.033-14.033,14.033-36.771,0-50.774c-14.004-14.033-36.741-14.033-50.774,0
+			L306.007,255.208L61.277,10.536c-14.004-14.033-36.771-14.033-50.774,0c-14.004,14.004-14.004,36.742,0,50.774l244.701,244.672
+			L10.503,550.684c-14.004,14.004-14.004,36.771,0,50.774c7.016,7.017,16.216,10.51,25.387,10.51c9.2,0,18.371-3.493,25.387-10.51
+			l244.701-244.701l244.671,244.701c7.017,7.017,16.217,10.51,25.388,10.51c9.199,0,18.399-3.493,25.387-10.51
+			c14.033-14.033,14.033-36.771,0-50.774L356.781,305.982z"/>
+			</svg> 
+		</div>
+		<div id="content_modal"> 
+			<form action=""> 
+				<div class="input"> 
+					<input type="text" name="login" placeholder="login">
+				</div>
+				<div class="input"> 
+					<input type="password" name="password" placeholder="password">
+				</div>
+				<button class="submit">sign in </button>
+			</form>
+		</div>
+	</div>
+	<div id="black_fill"></div>
+
+
+	<div id="cart_box" class="anime main_flex__nowrap flex__jcontent_between flex__align-items_center"> 
+		<div class="title_cart main_flex__nowrap flex__jcontent_between flex__align-items_center"> 
+			<p> Your basket</p>
+			<svg version="1.1" id="next" xmlns=" 
+				http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 477.175 477.175" style="
+				enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+
+				<path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+				c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+				"/>
+			</svg>
+		</div>
+		<div class="content_cart"> 
+
+		</div>
+		<button id="order" type="button">order </button>
+	</div>
+
+	<header class="dark">
+		<div id="top">
+			<div class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between">
+				
+				<div class="main_flex__nowrap flex__align-items_center">
+
+					<div id="sign" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between anime">
+
+						<svg  viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M16 14.2851C16 13.2047 14.3708 12.6045 13.5477 12.2787C13.0504 12.0729 12.5359 11.8671 12.0386 11.6442C11.3698 11.3355 10.6838 10.9753 10.1865 10.4094C10.015 10.2036 9.91211 10.0665 9.91211 9.79207C9.91211 9.39764 10.015 9.00321 10.1007 8.62594C10.2379 8.04287 10.5295 7.5627 10.7696 7.01393C11.0439 6.32797 11.1468 5.60772 11.284 4.90461C11.3355 4.59593 11.4212 4.30439 11.4212 3.99571C11.4212 1.86924 10.3065 0 7.99143 0C5.67631 0 4.56163 1.86924 4.56163 3.99571C4.56163 4.30439 4.66452 4.59593 4.71597 4.90461C4.87031 5.60772 4.95606 6.32797 5.24759 7.01393C5.48767 7.5627 5.79636 8.04287 5.9164 8.62594C6.01929 9.00321 6.10504 9.39764 6.10504 9.79207C6.10504 10.0665 6.00214 10.2036 5.83065 10.4094C5.33333 10.9753 4.64737 11.3355 3.97856 11.6442C3.48124 11.8842 2.96677 12.0729 2.46945 12.2787C1.6463 12.6217 0 13.2047 0 14.2851V16H16V15.0054V14.2851Z" />
+							</svg>
+						sign in
+					</div>
+
+					<div id="location">
+						location: <span>russia</span>
+					</div>
+				</div>
+				<div id="logo">
+					<a href="#"> <img src="img/logo.png"></a>
+				</div>
+				
+				<div class="main_flex__nowrap flex__align-items_center">
+					<div id="currency">
+						currency: <span>us dollar</span>
+					</div>
+					<div id="cart" class="btn anime main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<img src="img/cart.png" class="svg">
+						cart
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="menu">
+			<div class="wrap main_flex__nowrap flex__jcontent_center flex__align-items_center">
+				<nav id="main_nav">
+					<li><a href="#">mens</a>  </li>
+					<li><a href="#">womens</a> </li>
+					<li><a href="#">goods</a> </li>
+					<li><a href="#">accessories</a> </li>
+					<li><a href="#">brands</a> </li>
+					<li><a href="#">blog</a> </li>
+				</nav>
+
+				<div id="search_panel"> 
+					<input type="text" placeholder="search">
+				</div>
+
+				<div id="search_button">
+					<img src="img/search-button.png" class="src-btn">
+				</div>
+			</div>
+		</div>
+		<div id="baner">
+		<img src="img/brand.png">
+		</div>
+	</header>
+
+	<main class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start">
+		
+		<div id="left_bar">
+			<div id="category" class="box"> 
+
+				<div class="list_box"> 
+					<div class="title_box main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>Woman</p>
+						<img src="img/strelka.png">
+					
+					</div>
+
+				
+				</div>
+
+				<div class="list_box"> 
+					<div class="title_box main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>man</p>
+						<img src="img/strelka.png">
+						
+
+					</div>
+
+					<div class="list_link"> 
+						<nav> 
+							<li><a href="a">jackets</a></li>
+							<li><a href="a">blazers</a></li>
+							<li><a href="a">suits</a></li>
+							<li><a href="a">trousers</a></li>
+							<li><a href="a">jeans</a></li>
+							<li><a href="a">shirts</a></li>
+						</nav>
+					</div>
+				</div>
+
+				<div class="list_box"> 
+					<div class="title_box main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>kids</p>
+						<img src="img/strelka.png">
+						
+
+					</div>
+
+				</div>
+
+				<div class="list_box"> 
+					<div class="title_box main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>shoes&amp;bags</p>
+						<img src="img/strelka.png">
+						
+
+					</div>
+
+				
+				</div>
+
+			</div> 
+
+			<div class="filter_box box"> 
+				<div class="title_filter main_flex__nowrap flex__jcontent_start flex__align-items_center"> 
+					colors
+				</div>
+
+				<div class="content_filter"> 
+					<ul class="list_filter main_flex flex__jcontent_start flex__align-items_start color_list"> 
+						<li class="check-box"> <input id="blue" type="checkbox"> <label style="background-color: #1476f1" for="blue"> </label></li>
+						<li><input id="green" type="checkbox"> <label style="background-color: #82d889" for="green"> </label></li>
+						<li><input id="color3" type="checkbox"> <label style="background-color: #3c3d41" for="color3"></label></li>
+						<li><input id="color4" type="checkbox"><label style="background-color: #838d8f" for="color4"> </label></li>
+						<li><input id="color5" type="checkbox"> <label style="background-color: #b8c6c7" for="color5"></label></li>
+						<li><input id="color6" type="checkbox"><label style="background-color: #ce954a" for="color6"> </label></li>
+						<li><input id=" " type="checkbox"> <label style="background-color: #7b7f91" for="color7"></label></li>
+						<li><input id=" " type="checkbox"><label style="background-color: #777777" for="color8"> </label></li>
+						<li><input type="checkbox"><label style="background-color: #bdbdbd" for="color9"> </label></li>
+						<li><input type="checkbox"><label style="background-color: #eeeeee" for="color10"> </label></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="filter_box box"> 
+				<div class="title_filter main_flex__nowrap flex__jcontent_start flex__align-items_center"> 
+					size
+				</div>
+
+				<div class="content_filter"> 
+					<ul class="list_filter main_flex flex__jcontent_start flex__align-items_start"> 
+						<li>
+							<input checked id="size1" type="checkbox">
+							<label for="size1"> xs</label> 
+						</li>
+						<li>
+							<input  id="size2" type="checkbox">
+							<label for="size2"> s</label> 
+						</li>
+						<li>
+							<input id="size3" type="checkbox">
+							<label for="size3"> m</label> 
+						</li>
+						<li>
+							<input  id="size4" type="checkbox">
+							<label for="size4"> l</label> 
+						</li>
+						<li>
+							<input  id="size5" type="checkbox">
+							<label for="size5"> xl</label> 
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="filter_box box"> 
+				<div class="title_filter main_flex__nowrap flex__jcontent_start flex__align-items_center"> 
+					price range
+				</div>
+
+				<div class="content_filter"> 
+					<div id="slider_price"></div>
+					<div class="price_box main_flex__nowrap flex__jcontent_between flex__align-items_center"> 
+						<input type="text" name="minprice" value="">
+						<input type="text" name="maxprice" value="">
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="right_bar">
+			<div class="list_product main_flex flex__jcontent_start flex__align-items_start">
+				
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="tag box">
+						new 
+					</div>
+
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+
+
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+				<a href="#" class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product">
+						<img src="img/01.png">
+					</div>
+					
+					<h2>Our Legacy Splash Jacquard Knit</h2>
+					<p>Black Grey Plants</p>
+					<p class="price">$290</p> 
+
+				</a>
+
+
+			</div>
+			
+			<button id="load_more" type="button">
+				load more
+			</button>
+
+		</div>
+	</main>
+
+	<footer> 
+		<div class="wrap">
+			<div> 
+				<nav id="footer_nav" class="main_flex__nowrap flex__jcontent_center flex__align-items_center"> 
+					<li><a href="#">LEGAL INFORMATION</a></li>
+					<li><a href="#">TERMS</a></li>
+					<li><a href="#">DATA PRIVACY</a></li>
+					<li><a href="#">SIZING</a></li>
+					<li><a href="#">SHIPPING</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</nav>
+			</div>
+			<div id="newsletter" class="main_flex__nowrap flex__jcontent_center flex__align-items_center"> 
+				<p>NEWSLETTER</p>
+				<input type="text" placeholder="E-mail">
+			</div>
+			<div> 
+				<ul id="soc_list" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<li><a targer="_blank" href="#">
+						<img src="img/face_logo.png"></a> 
+					</li>
+					<li><a targer="_blank" href="#"> 
+						<img src="img/twitter_logo.png">
+					</a></li>
+					<li><a targer="_blank" href="#"> 
+						<img src="img/insta_logo.png">
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
